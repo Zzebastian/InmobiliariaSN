@@ -12,9 +12,20 @@
     background-color: aquamarine;
     grid-area: titulo;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 3fr 2fr;
     grid-template-rows: auto auto;
-    grid-template-areas: "nombre nombre panel-navegacion";
+    grid-template-areas: "iEmpresa nombre panel-navegacion";
+}
+.icono-empresa {
+    grid-area: iEmpresa;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;   
+    align-self: center;
+}
+.icono-empresa2 {
+    display: none
 }
 .nombre {
     grid-area: nombre;
@@ -28,10 +39,11 @@
     background-color: beige;
     margin: 10px
 }
-.panel-navegacion span {
+.panel-navegacion a {
     margin: 5px;
     padding: 5px;
     border-style: solid;
+    flex-wrap: wrap;
 }
 
 /* Cuerpo */
@@ -65,3 +77,48 @@
 }
 
 /* Pie */
+
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    .icono-empresa2 {
+        display: inline;
+        grid-area: iEmpresa2;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        align-self: center;
+        justify-content: center; 
+    }
+    .titulo {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: "iEmpresa nombre iEmpresa2" 
+                            "panel-navegacion panel-navegacion panel-navegacion";
+    }
+    .panel-navegacion {
+        /* align-items: flex-start; */align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+}
+@media (max-width: 750px) {
+    .icono-empresa2 {
+        display: none
+    }
+    .titulo {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "iEmpresa nombre" 
+                            "panel-navegacion panel-navegacion";
+    }
+}
+@media (max-width: 500px) {
+    .icono-empresa {
+        display: none
+    }
+    .titulo {
+        grid-template-columns: 1fr;
+        grid-template-areas: "nombre" 
+                            "panel-navegacion";
+    }
+}
