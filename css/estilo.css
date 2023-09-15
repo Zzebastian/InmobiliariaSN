@@ -1,3 +1,14 @@
+/* 
+#2b2f32
+#dec0a7
+#7e6c61
+#90929c
+#909da7
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&display=swap');
+
+
 .contenedor {
     display: grid;
     grid-template-columns: auto;
@@ -7,10 +18,21 @@
                         "fondo"
                         ;
 }
+h1, h2 {
+    font-family: 'Dancing Script', cursive;
+}
+a, p {
+    font-family: 'Libre Baskerville', serif; 
+}
+.cuerpo {
+    font-family: 'Libre Baskerville', serif;
+}
 /* Cabecera */
 
 .titulo {
-    background-color: aquamarine;
+    /* background-color: #dec0a7; */
+    background-color: #909da7;
+    /* background-color: #90929c; */
     grid-area: titulo;
     display: grid;
     grid-template-columns: 1fr 3fr 2fr;
@@ -37,13 +59,13 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background-color: beige;
+    /* background-color: beige; */
     margin: 10px
 }
 .panel-navegacion a {
     margin: 5px;
     padding: 5px;
-    border-style: solid;
+    
     flex-wrap: wrap;
 }
 
@@ -55,19 +77,20 @@
     grid-template-columns: 6fr 2fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "pie-nombre pie-panel-navegacion pie-redes-sociales";
+    background-color: #90929c;
 }
 
 .pie-nombre {
     grid-area: pie-nombre;
-    border-style: solid;
+    
 }
 .pie-panel-navegacion {
     grid-area: pie-panel-navegacion;
-    border-style: solid;
+    
 }
 .pie-redes-sociales {
     grid-area: pie-redes-sociales;
-    border-style: solid;
+    
 }
 
 
@@ -92,6 +115,7 @@
     .panel-navegacion {
         align-items: flex-end;
         justify-content: flex-start;
+        
     }
 
 }
