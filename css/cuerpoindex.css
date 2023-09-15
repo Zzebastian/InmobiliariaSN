@@ -1,0 +1,29 @@
+/* Cuerpo */
+.cuerpo {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "v1 v3"
+                        "v2 v2"
+                        "v4 v4";
+}
+.viviendas {
+    background-color: coral;
+    border-style: solid;
+    max-width: 300px;
+    height: 100px;
+}
+
+
+.v1 {
+    grid-area: v1;
+}
+.v2 {
+    grid-area: v2;
+}
+.v3 {
+    grid-area: v3;
+}
+.v4 {
+    grid-area: v4;
+}

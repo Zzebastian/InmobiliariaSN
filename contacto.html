@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria S/N</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/cuerpocontacto.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="titulo">
+            <img src="/InmobiliariaSN/imagenes/Logo empresa.ico" alt="" class="icono-empresa">
+            <img src="/InmobiliariaSN/imagenes/Logo empresa.ico" alt="" class="icono-empresa2">
+            <header class="nombre">
+                <h1>
+                    Inmobiliaria Sin Nombre
+                </h1>
+                <h2><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+                    Encontramos tu lugar ideal
+                </h2>
+            </header>
+            <nav class="panel-navegacion">
+                <a href="#">Inicio</a>
+                <a href="#">Mapa de propiedades</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Agregá tu propiedad</a>
+            </nav>
+        </div>
+        <div class="cuerpo">
+            <form action="agregar-vivienda" method="post" class="formulario">
+                <ul class="columna-1">
+                    <li class="campo">
+                        <label for="ciudad">Ciudad</label>
+                        <br>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    </li>
+                    <li class="campo">
+                        <label for="barrio">Barrio</label>
+                        <br>
+                        <input type="text" id="barrio" name="barrio" required>
+                    </li>
+                    <li class="campo">
+                        <label for="calle">Calle</label>
+                        <br>
+                        <input type="text" id="calle" name="calle" required>
+                    </li>
+                    <li class="campo">
+                        <label for="numero">Número</label>
+                        <br>
+                        <input type="text" id="numero" name="numero" required>
+                    </li>
+                    <li class="campo">
+                        <label for="piso">Piso</label>
+                        <br>
+                        <input type="text" id="piso" name="piso" required>
+                    </li>
+                </ul>
+                <ul class="columna-2">
+                    <li class="campo">
+                        <label for="habitaciones">Habitaciones</label>
+                        <br>
+                        <input type="text" id="habitaciones" name="habitaciones" required>
+                    </li>
+                    <li class="campo">
+                        <label for="banos">Baños</label>
+                        <br>
+                        <input type="text" id="banos" name="banos" required>
+                    </li>
+                    <li class="campo">
+                        <label for="area">Área</label>
+                        <br>
+                        <input type="text" id="area" name="area" required>
+                    </li>
+                    <li class="campo">
+                        <label for="correo">Correo electrónico</label>
+                        <br>
+                        <input type="email" id="correo" name="correo" required>
+                    </li>
+                </ul>
+                <ul class="enviar">
+                    <li class="boton">
+                        <button type="submit">Envíe su mensaje</button>
+                    </li>
+                </ul>
+                <ul class="borrar">
+                    <li class="boton">
+                        <button type="reset">Borrar Contenido</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="pie">
+            <div class="pie-nombre">
+                <h1>Inmobiliaria Sin Nombre</h1>
+                <p>Encontrá propiedades en alquiler en cualquier parte de la argentina</p>
+            </div>
+            <div class="pie-panel-navegacion">
+                <a href="#">Inicio</a>
+                <br>
+                <a href="#">Mapa de propiedades</a>
+                <br>
+                <a href="#">Sobre nosotros</a>
+                <br>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="pie-redes-sociales">
+                <a href="#"><i class="fab fa-facebook" title="Facebook"></i></a>
+                <br>
+                <a href="#"><i class="fab fa-instagram" title="Instagram"></i></a>
+                <br>
+                <a href="mailto:#"><i class="fab fa-google" title="Gmail"></i></a>
+
+            </div>
+
+
+            
+
+        </div>
+    </div>
+</body>
+</html>

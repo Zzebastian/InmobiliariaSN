@@ -1,0 +1,47 @@
+/* Cuerpo */
+.formulario {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "col1 col2"
+                        "enviar borrar";
+}
+form {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.columna-1 {
+    grid-area: col1;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.columna-2 {
+    grid-area: col2;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.enviar {
+    grid-area: enviar;
+}
+.reset {
+    grid-area: reset;
+}
+
+
+
+
+/* Media Queries */
+
+/* .formulario {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "col1 col1"
+                        "col2 col2";
+}
+
