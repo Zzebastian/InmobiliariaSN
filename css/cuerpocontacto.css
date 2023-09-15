@@ -12,7 +12,12 @@ form {
     margin-bottom: 20px;
     margin-top: 20px;
 }
-
+li.campo.boton button {
+    font-family: 'Libre Baskerville', serif; 
+    font-size: medium;
+    background-color: #dec0a7;
+    padding: 5px;
+}
 ul {
     list-style: none;
 }

@@ -1,13 +1,13 @@
 /* 
-#2b2f32
-#dec0a7
-#7e6c61
-#90929c
-#909da7
-*/
+color: #2b2f32;
+color: #dec0a7;
+color: #7e6c61;
+color: #90929c;
+color: #909da7;
+ */
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
 .contenedor {
     display: grid;
@@ -19,14 +19,26 @@
                         ;
 }
 h1, h2 {
-    font-family: 'Dancing Script', cursive;
-}
-a, p {
+    /* font-family: 'Dancing Script', cursive; */
     font-family: 'Libre Baskerville', serif; 
 }
-.cuerpo {
-    font-family: 'Libre Baskerville', serif;
+a, p, .cuerpo {
+    font-family: 'Libre Baskerville', serif; 
 }
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    font-weight: bold;
+    color: #dec0a7;
+
+}
+
+
 /* Cabecera */
 
 .titulo {
