@@ -77,6 +77,26 @@
 }
 
 /* Pie */
+.pie {
+    display: grid;
+    grid-template-columns: 6fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "pie-nombre pie-panel-navegacion pie-redes-sociales";
+}
+
+.pie-nombre {
+    grid-area: pie-nombre;
+    border-style: solid;
+}
+.pie-panel-navegacion {
+    grid-area: pie-panel-navegacion;
+    border-style: solid;
+}
+.pie-redes-sociales {
+    grid-area: pie-redes-sociales;
+    border-style: solid;
+}
+
 
 
 /* Media Queries */
